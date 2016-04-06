@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		521C468B1C7E62E200F10C5B /* VisualComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C468A1C7E62E200F10C5B /* VisualComponent.swift */; };
+		521C468D1C7EADEF00F10C5B /* MovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521C468C1C7EADEF00F10C5B /* MovementComponent.swift */; };
+		5238E2611C8BC1AF0097F77F /* LevelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238E2601C8BC1AF0097F77F /* LevelCell.swift */; };
+		5238E2651C8BD2810097F77F /* GameInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238E2641C8BD2810097F77F /* GameInfo.swift */; };
+		5238E2671C8BDE9B0097F77F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238E2661C8BDE9B0097F77F /* SettingsViewController.swift */; };
+		5238E2691C8C0D850097F77F /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238E2681C8C0D850097F77F /* SplashScreen.swift */; };
+		5238E26B1C8CD72A0097F77F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5238E26A1C8CD72A0097F77F /* Settings.bundle */; };
+		5238E2701C8CF4890097F77F /* TowersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238E26F1C8CF4890097F77F /* TowersTableViewController.swift */; };
+		5238E2721C90AA460097F77F /* LevelSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5238E2711C90AA460097F77F /* LevelSelect.swift */; };
+		527B776D1C7D078700DBAB7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B776C1C7D078700DBAB7D /* AppDelegate.swift */; };
+		527B776F1C7D078700DBAB7D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 527B776E1C7D078700DBAB7D /* GameScene.sks */; };
+		527B77711C7D078700DBAB7D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B77701C7D078700DBAB7D /* GameScene.swift */; };
+		527B77731C7D078700DBAB7D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B77721C7D078700DBAB7D /* GameViewController.swift */; };
+		527B77761C7D078700DBAB7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527B77741C7D078700DBAB7D /* Main.storyboard */; };
+		527B77781C7D078800DBAB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527B77771C7D078800DBAB7D /* Assets.xcassets */; };
+		527B777B1C7D078800DBAB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527B77791C7D078800DBAB7D /* LaunchScreen.storyboard */; };
+		527B77861C7D078800DBAB7D /* TowerDefenseGridTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B77851C7D078800DBAB7D /* TowerDefenseGridTestTests.swift */; };
+		52A6CC9F1C94E05600D054C3 /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6CC9E1C94E05600D054C3 /* Instructions.swift */; };
+		52A6CCA11C94E26A00D054C3 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A6CCA01C94E26A00D054C3 /* InfoCell.swift */; };
+		52E161A71C8258F900571656 /* HPComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E161A61C8258F900571656 /* HPComponent.swift */; };
+		52E161A91C825A6B00571656 /* FiringComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E161A81C825A6B00571656 /* FiringComponent.swift */; };
+		52E161AC1C825C6A00571656 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E161AB1C825C6A00571656 /* Enemy.swift */; };
+		52E161AE1C825CF800571656 /* Tower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E161AD1C825CF800571656 /* Tower.swift */; };
+		52E161B01C82617600571656 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E161AF1C82617600571656 /* MainMenuViewController.swift */; };
+		52E161B21C826A6600571656 /* MoneyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E161B11C826A6600571656 /* MoneyComponent.swift */; };
+		52E161B51C83B1BA00571656 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E161B41C83B1BA00571656 /* Level.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		527B77821C7D078800DBAB7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 527B77611C7D078700DBAB7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 527B77681C7D078700DBAB7D;
+			remoteInfo = TowerDefenseGridTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		521C468A1C7E62E200F10C5B /* VisualComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualComponent.swift; sourceTree = "<group>"; };
+		521C468C1C7EADEF00F10C5B /* MovementComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovementComponent.swift; sourceTree = "<group>"; };
+		5238E2601C8BC1AF0097F77F /* LevelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelCell.swift; sourceTree = "<group>"; };
+		5238E2641C8BD2810097F77F /* GameInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInfo.swift; sourceTree = "<group>"; };
+		5238E2661C8BDE9B0097F77F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5238E2681C8C0D850097F77F /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		5238E26A1C8CD72A0097F77F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		5238E26F1C8CF4890097F77F /* TowersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TowersTableViewController.swift; sourceTree = "<group>"; };
+		5238E2711C90AA460097F77F /* LevelSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelect.swift; sourceTree = "<group>"; };
+		527B77691C7D078700DBAB7D /* MonstersLoveIceCream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonstersLoveIceCream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		527B776C1C7D078700DBAB7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		527B776E1C7D078700DBAB7D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		527B77701C7D078700DBAB7D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		527B77721C7D078700DBAB7D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		527B77751C7D078700DBAB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		527B77771C7D078800DBAB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		527B777A1C7D078800DBAB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		527B777C1C7D078800DBAB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		527B77811C7D078800DBAB7D /* MonstersLoveIceCream.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonstersLoveIceCream.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		527B77851C7D078800DBAB7D /* TowerDefenseGridTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerDefenseGridTestTests.swift; sourceTree = "<group>"; };
+		527B77871C7D078800DBAB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A6CC9E1C94E05600D054C3 /* Instructions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
+		52A6CCA01C94E26A00D054C3 /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
+		52E161A61C8258F900571656 /* HPComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPComponent.swift; sourceTree = "<group>"; };
+		52E161A81C825A6B00571656 /* FiringComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiringComponent.swift; sourceTree = "<group>"; };
+		52E161AB1C825C6A00571656 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		52E161AD1C825CF800571656 /* Tower.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tower.swift; sourceTree = "<group>"; };
+		52E161AF1C82617600571656 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		52E161B11C826A6600571656 /* MoneyComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyComponent.swift; sourceTree = "<group>"; };
+		52E161B41C83B1BA00571656 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		527B77661C7D078700DBAB7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527B777E1C7D078800DBAB7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5238E26C1C8CF4210097F77F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5238E2681C8C0D850097F77F /* SplashScreen.swift */,
+				52E161AF1C82617600571656 /* MainMenuViewController.swift */,
+				527B77721C7D078700DBAB7D /* GameViewController.swift */,
+				52A6CC9E1C94E05600D054C3 /* Instructions.swift */,
+				5238E2711C90AA460097F77F /* LevelSelect.swift */,
+				5238E26F1C8CF4890097F77F /* TowersTableViewController.swift */,
+				5238E2661C8BDE9B0097F77F /* SettingsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		527B77601C7D078700DBAB7D = {
+			isa = PBXGroup;
+			children = (
+				527B776B1C7D078700DBAB7D /* MonstersLoveIceCream */,
+				527B77841C7D078800DBAB7D /* TowerDefenseGridTestTests */,
+				527B776A1C7D078700DBAB7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		527B776A1C7D078700DBAB7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				527B77691C7D078700DBAB7D /* MonstersLoveIceCream.app */,
+				527B77811C7D078800DBAB7D /* MonstersLoveIceCream.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		527B776B1C7D078700DBAB7D /* MonstersLoveIceCream */ = {
+			isa = PBXGroup;
+			children = (
+				527B776C1C7D078700DBAB7D /* AppDelegate.swift */,
+				52CE67301C950DBF00FF7352 /* Game */,
+				52E161B41C83B1BA00571656 /* Level.swift */,
+				5238E2641C8BD2810097F77F /* GameInfo.swift */,
+				527B77701C7D078700DBAB7D /* GameScene.swift */,
+				527B776E1C7D078700DBAB7D /* GameScene.sks */,
+				52CE672F1C950D9900FF7352 /* Cells */,
+				5238E26C1C8CF4210097F77F /* ViewControllers */,
+				527B77741C7D078700DBAB7D /* Main.storyboard */,
+				5238E26A1C8CD72A0097F77F /* Settings.bundle */,
+				527B77771C7D078800DBAB7D /* Assets.xcassets */,
+				527B77791C7D078800DBAB7D /* LaunchScreen.storyboard */,
+				527B777C1C7D078800DBAB7D /* Info.plist */,
+			);
+			name = MonstersLoveIceCream;
+			path = TowerDefenseGridTest;
+			sourceTree = "<group>";
+		};
+		527B77841C7D078800DBAB7D /* TowerDefenseGridTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				527B77851C7D078800DBAB7D /* TowerDefenseGridTestTests.swift */,
+				527B77871C7D078800DBAB7D /* Info.plist */,
+			);
+			path = TowerDefenseGridTestTests;
+			sourceTree = "<group>";
+		};
+		52CE672F1C950D9900FF7352 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				52A6CCA01C94E26A00D054C3 /* InfoCell.swift */,
+				5238E2601C8BC1AF0097F77F /* LevelCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		52CE67301C950DBF00FF7352 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				52E161A51C8252FF00571656 /* Components */,
+				52E161AA1C825C5400571656 /* Entities */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		52E161A51C8252FF00571656 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				52E161A61C8258F900571656 /* HPComponent.swift */,
+				52E161B11C826A6600571656 /* MoneyComponent.swift */,
+				521C468C1C7EADEF00F10C5B /* MovementComponent.swift */,
+				52E161A81C825A6B00571656 /* FiringComponent.swift */,
+				521C468A1C7E62E200F10C5B /* VisualComponent.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		52E161AA1C825C5400571656 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				52E161AB1C825C6A00571656 /* Enemy.swift */,
+				52E161AD1C825CF800571656 /* Tower.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		527B77681C7D078700DBAB7D /* MonstersLoveIceCream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 527B778A1C7D078800DBAB7D /* Build configuration list for PBXNativeTarget "MonstersLoveIceCream" */;
+			buildPhases = (
+				527B77651C7D078700DBAB7D /* Sources */,
+				527B77661C7D078700DBAB7D /* Frameworks */,
+				527B77671C7D078700DBAB7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonstersLoveIceCream;
+			productName = TowerDefenseGridTest;
+			productReference = 527B77691C7D078700DBAB7D /* MonstersLoveIceCream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		527B77801C7D078800DBAB7D /* MonstersLoveIceCreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 527B778D1C7D078800DBAB7D /* Build configuration list for PBXNativeTarget "MonstersLoveIceCreamTests" */;
+			buildPhases = (
+				527B777D1C7D078800DBAB7D /* Sources */,
+				527B777E1C7D078800DBAB7D /* Frameworks */,
+				527B777F1C7D078800DBAB7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				527B77831C7D078800DBAB7D /* PBXTargetDependency */,
+			);
+			name = MonstersLoveIceCreamTests;
+			productName = TowerDefenseGridTestTests;
+			productReference = 527B77811C7D078800DBAB7D /* MonstersLoveIceCream.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		527B77611C7D078700DBAB7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "CJ Hodnefield";
+				TargetAttributes = {
+					527B77681C7D078700DBAB7D = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = YC4TV997BV;
+					};
+					527B77801C7D078800DBAB7D = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = YC4TV997BV;
+						TestTargetID = 527B77681C7D078700DBAB7D;
+					};
+				};
+			};
+			buildConfigurationList = 527B77641C7D078700DBAB7D /* Build configuration list for PBXProject "MonstersLoveIceCream" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 527B77601C7D078700DBAB7D;
+			productRefGroup = 527B776A1C7D078700DBAB7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				527B77681C7D078700DBAB7D /* MonstersLoveIceCream */,
+				527B77801C7D078800DBAB7D /* MonstersLoveIceCreamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		527B77671C7D078700DBAB7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527B776F1C7D078700DBAB7D /* GameScene.sks in Resources */,
+				527B777B1C7D078800DBAB7D /* LaunchScreen.storyboard in Resources */,
+				5238E26B1C8CD72A0097F77F /* Settings.bundle in Resources */,
+				527B77781C7D078800DBAB7D /* Assets.xcassets in Resources */,
+				527B77761C7D078700DBAB7D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527B777F1C7D078800DBAB7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		527B77651C7D078700DBAB7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5238E2691C8C0D850097F77F /* SplashScreen.swift in Sources */,
+				5238E2611C8BC1AF0097F77F /* LevelCell.swift in Sources */,
+				52E161AE1C825CF800571656 /* Tower.swift in Sources */,
+				521C468D1C7EADEF00F10C5B /* MovementComponent.swift in Sources */,
+				527B77711C7D078700DBAB7D /* GameScene.swift in Sources */,
+				527B77731C7D078700DBAB7D /* GameViewController.swift in Sources */,
+				52A6CC9F1C94E05600D054C3 /* Instructions.swift in Sources */,
+				52E161B21C826A6600571656 /* MoneyComponent.swift in Sources */,
+				5238E2701C8CF4890097F77F /* TowersTableViewController.swift in Sources */,
+				527B776D1C7D078700DBAB7D /* AppDelegate.swift in Sources */,
+				52E161B51C83B1BA00571656 /* Level.swift in Sources */,
+				52E161AC1C825C6A00571656 /* Enemy.swift in Sources */,
+				5238E2721C90AA460097F77F /* LevelSelect.swift in Sources */,
+				52E161B01C82617600571656 /* MainMenuViewController.swift in Sources */,
+				5238E2671C8BDE9B0097F77F /* SettingsViewController.swift in Sources */,
+				52E161A91C825A6B00571656 /* FiringComponent.swift in Sources */,
+				521C468B1C7E62E200F10C5B /* VisualComponent.swift in Sources */,
+				52E161A71C8258F900571656 /* HPComponent.swift in Sources */,
+				5238E2651C8BD2810097F77F /* GameInfo.swift in Sources */,
+				52A6CCA11C94E26A00D054C3 /* InfoCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527B777D1C7D078800DBAB7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				527B77861C7D078800DBAB7D /* TowerDefenseGridTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		527B77831C7D078800DBAB7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 527B77681C7D078700DBAB7D /* MonstersLoveIceCream */;
+			targetProxy = 527B77821C7D078800DBAB7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		527B77741C7D078700DBAB7D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				527B77751C7D078700DBAB7D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		527B77791C7D078800DBAB7D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				527B777A1C7D078800DBAB7D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		527B77881C7D078800DBAB7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		527B77891C7D078800DBAB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		527B778B1C7D078800DBAB7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TowerDefenseGridTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cjhodnefield.TowerDefenseGridTest;
+				PRODUCT_NAME = MonstersLoveIceCream;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		527B778C1C7D078800DBAB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TowerDefenseGridTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cjhodnefield.TowerDefenseGridTest;
+				PRODUCT_NAME = MonstersLoveIceCream;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		527B778E1C7D078800DBAB7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = TowerDefenseGridTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cjhodnefield.TowerDefenseGridTestTests;
+				PRODUCT_NAME = MonstersLoveIceCream;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonstersLoveIceCream.app/MonstersLoveIceCream";
+			};
+			name = Debug;
+		};
+		527B778F1C7D078800DBAB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TowerDefenseGridTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cjhodnefield.TowerDefenseGridTestTests;
+				PRODUCT_NAME = MonstersLoveIceCream;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonstersLoveIceCream.app/MonstersLoveIceCream";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		527B77641C7D078700DBAB7D /* Build configuration list for PBXProject "MonstersLoveIceCream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527B77881C7D078800DBAB7D /* Debug */,
+				527B77891C7D078800DBAB7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		527B778A1C7D078800DBAB7D /* Build configuration list for PBXNativeTarget "MonstersLoveIceCream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527B778B1C7D078800DBAB7D /* Debug */,
+				527B778C1C7D078800DBAB7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		527B778D1C7D078800DBAB7D /* Build configuration list for PBXNativeTarget "MonstersLoveIceCreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527B778E1C7D078800DBAB7D /* Debug */,
+				527B778F1C7D078800DBAB7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 527B77611C7D078700DBAB7D /* Project object */;
+}
